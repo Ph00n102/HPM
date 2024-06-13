@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HPM.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\HPM\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\HPM\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\HPM\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\HPM\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HPM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HPM.props",
+      "PackagePath": "build\\HPM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HPM.props",
+      "PackagePath": "buildMultiTargeting\\HPM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HPM.props",
+      "PackagePath": "buildTransitive\\HPM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
