@@ -133,3 +133,14 @@ D:\HPM\obj\Debug\net8.0\refint\HPM.dll
 D:\HPM\obj\Debug\net8.0\HPM.pdb
 D:\HPM\obj\Debug\net8.0\HPM.genruntimeconfig.cache
 D:\HPM\obj\Debug\net8.0\ref\HPM.dll
+D:\HPM\obj\Debug\net8.0\HPM.sourcelink.json
+D:\HPM\bin\Debug\net8.0\BlazorBootstrap.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\HPM\bin\Debug\net8.0\Microsoft.JSInterop.dll

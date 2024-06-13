@@ -5,11 +5,14 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddBlazorBootstrap();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+
+
 var HpmConnectionString = builder.Configuration.GetConnectionString("Hpm");
-builder.Services.AddDbContext<HpmContext>(options =>options.UseSqlServer());
+builder.Services.AddDbContext<HpmContext>(options =>options.UseSqlServer(HpmConnectionString));
 
 var app = builder.Build();
 
