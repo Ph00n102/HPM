@@ -1,6 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">HPM</a>
+﻿<div class="top-row navbar-dark align-self-center " >
+    <div >
+        <a class="navbar-brand" href=""><img src="Images/logo1.png" style="width:195px;height:50px;" /></a>
     </div>
 </div>
 
@@ -8,7 +8,7 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
-        <div class="nav-item px-3">
+        @* <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
@@ -24,10 +24,31 @@
             <NavLink class="nav-link" href="weather">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
+        </div> *@
+        <div class="nav-item px-3" >
             <NavLink class="nav-link" href="login">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Login
+                 <Icon Name="IconName.PersonVCard" Size="IconSize.x3" style="color: #000000;" />&nbsp;<label style="color: #000000;">Login</label>
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="input_detail">
+                <Icon Name="IconName.PersonPlusFill" Size="IconSize.x3" style="color: #000000;" />&nbsp;<label style="color: #000000;">เรียกบริการเวรเปล</label>
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="index">
+                <Icon Name="IconName.Calendar2Minus" Size="IconSize.x3" style="color: #000000;" />&nbsp;<label style="color: #000000;">รายการคิวเวรเปล</label>
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="index_nurse">
+                <Icon Name="IconName.Calendar2Minus" Size="IconSize.x3" style="color: #000000;" />&nbsp;<label style="color: #000000;">หน่วยงานยืนยันหลังได้เปล</label>
+            </NavLink>
+        </div>
+         <div class="nav-item px-3">
+            <NavLink class="nav-link" href="">
+                @* <Icon Name="IconName.Calendar2Minus" Size="IconSize.x3" style="color: #000000;" />&nbsp; *@
+                <label style="color: #000000;">Logout</label>
             </NavLink>
         </div>
     </nav>

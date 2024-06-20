@@ -1,0 +1,114 @@
+@page "/Add_Data" 
+@inject NavigationManager NavigationManager
+
+@attribute [StreamRendering]
+@rendermode InteractiveServer
+
+<style>
+     .grid{
+        @* margin-bottom: 3rem; *@
+        @* display: grid; *@
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); 
+        @*1fr คือให้คำนวณพื้นที่ auto*@
+    }
+    .btn1 {
+        width: 90px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #fffba7 0%, #fffb08 70%);
+    }
+    .btn2 {
+        width: 90px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #ff2c2c 0%, #bd0404 70%);
+    }
+    .btn3 {
+        width: 90px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #60ff8d 0%, #016e2d 70%);
+    }
+    
+</style>
+<br />
+<div class="row">
+    <div class="col-sm-3 align-self-center">
+    </div>
+    <div class="col-sm-3 align-self-center " style="width:130px;">
+        <label>ประเภทข้อมูล :</label>
+    </div>
+    <div class="col-sm-4">
+        <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0; width:200px;">
+            <option selected>เลือกประเภทข้อมูล</option>
+            <option value="1">ประเภทคนไข้</option>
+            <option value="2">ประเภทรถเข็น</option>
+            <option value="3">ประเภทความเร่งด่วน</option>
+        </select>
+    </div>
+</div>
+<br />
+<div class="row grid">
+   <table class="content-table table-bordered" style="width:50%;">
+    <thead>
+      <tr>
+        <th width="20px">รหัส</th>
+        <th width="400px">รายละเอียด</th>
+        <th width="20px">แก้ไข</th>
+        <th width="20px">ลบ</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td data-cell="รหัส">1</td>
+        <td data-cell="รายละเอียด">1</td>
+        <td data-cell="แก้ไข"><button class="btn1 btn-success">แก้ไข</button></td>
+        <td data-cell="ลบ"><button class="btn2 btn-success">ลบ</button></td>
+      </tr>
+      <tr>
+        <td data-cell="รหัส">1</td>
+        <td data-cell="รายละเอียด">1</td>
+        <td data-cell="แก้ไข"><button class="btn1 btn-success">แก้ไข</button></td>
+        <td data-cell="ลบ"><button class="btn2 btn-success">ลบ</button></td>
+      </tr>
+      <tr>
+        <td>เพิ่ม</td>
+        <td><input type="text" class="form-control" style="background-color: #fdfce0;"></td>
+        <td colspan="2"><button class="btn3 btn-success">เพิ่ม</button></td>
+      </tr>
+      
+      </tbody>
+  </table>
+</div>
+
+
+@code 
+{ 
+    private void btn_adddata() 
+    { 
+        NavigationManager.NavigateTo("/Add_Data/"); 
+    } 
+}
+
+

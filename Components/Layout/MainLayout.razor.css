@@ -9,7 +9,7 @@ main {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, #96f3cf 0%, #0a8d58 70%);
 }
 
 .top-row {
@@ -93,4 +93,16 @@ main {
         position: absolute;
         right: 0.75rem;
         top: 0.5rem;
+    }
+
+    .backgroundBg {
+        background-image: url('Images/P5.png');
+        /* background: yellow; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        /* opacity: 0.6; */
+        width: 100vw;
+        height: 100vh;
     }

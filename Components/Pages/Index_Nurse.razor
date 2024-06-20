@@ -1,0 +1,155 @@
+@page "/index_nurse" 
+@inject NavigationManager NavigationManager
+
+@attribute [StreamRendering]
+@rendermode InteractiveServer
+
+<style>
+    @* .aaa { *@
+        @* border-radius: 40px; *@
+         @*ทำให้มุมมน*@
+    @* } *@
+   
+     .grid{
+        @* margin-bottom: 3rem; *@
+        @* display: grid; *@
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); 
+        @*1fr คือให้คำนวณพื้นที่ auto*@
+    }
+    
+    @* .table-container {
+        max-width: 100%;
+        overflow: scroll;
+    } *@
+    .btn1 {
+        width: 70px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #55b3f2 0%, #0c69ba 70%);
+    }
+    .btn2 {
+        width: 90px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #2dff29 0%, #04a101 70%);
+    }
+    .btn3 {
+        width: 90px;
+        height: 35px;
+        background: #aeaeae;
+        border: none;
+        outline: none;
+        border-radius: 20px; @*ทำให้มุมมน*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        color: #000000;
+        font-weight: 600;
+        background-image: linear-gradient(180deg, #ffff9d 0%, #bd9c17 70%);
+    }
+   
+</style>
+<br />
+<div class="row grid ">
+    <div class="col-sm-3 align-self-center" style="width:40px;" >
+        <label >QN</label>
+    </div>
+    <div class="col-sm-4 align-self-center" style="width:220px;" >
+        <input type="text" class="form-control" style="background-color: #fdfce0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);"  >
+    </div>
+    <div class="col-sm-4 align-self-center" align="left">
+        <button class="btn1 btn-success">ค้นหา</button>
+    </div>
+</div>
+<div class="row grid">
+   <table class="content-table table-bordered ">
+    <thead>
+      <tr>
+        <th> QN</th>
+        <th> ชื่อ-นามสกุล</th>
+        <th> ต้นทาง</th>
+        <th> ปลายทาง</th>
+        <th> พนักงานเวรเปล</th>
+        <th> ประเภทรถ</th>
+        <th> ระดับความเร่งด่วน</th>
+        <th> สถานะ</th>
+        <th> หมายเหตุ</th>
+        <th> ยืนยัน</th>
+        <th> แก้ไข</th>
+        @* <th> จ่ายงาน</th> *@
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td data-cell="QN">1</td>
+        <td data-cell="ชื่อ-นามสกุล">1</td>
+        <td data-cell="ต้นทาง">1</td>
+        <td data-cell="ปลายทาง">1</td>
+        <td data-cell="พนักงานเวรเปล"></td>
+        <td data-cell="ประเภทรถ">1</td>
+        <td data-cell="ระดับความเร่งด่วน">1</td>
+        <td data-cell="สถานะ">1</td>
+        <td data-cell="หมายเหตุ">1</td>
+        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
+        <td data-cell="แก้ไข"><button  @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
+        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
+      </tr>
+      <tr>
+        <td data-cell="QN">1</td>
+        <td data-cell="ชื่อ-นามสกุล">1</td>
+        <td data-cell="ต้นทาง">1</td>
+        <td data-cell="ปลายทาง">1</td>
+        <td data-cell="พนักงานเวรเปล"></td>
+        <td data-cell="ประเภทรถ">1</td>
+        <td data-cell="ระดับความเร่งด่วน">1</td>
+        <td data-cell="สถานะ">1</td>
+        <td data-cell="หมายเหตุ">1</td>
+        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
+        <td data-cell="แก้ไข"><button @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
+        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
+      </tr>
+      <tr>
+        <td data-cell="QN">1</td>
+        <td data-cell="ชื่อ-นามสกุล">1</td>
+        <td data-cell="ต้นทาง">1</td>
+        <td data-cell="ปลายทาง">1</td>
+        <td data-cell="พนักงานเวรเปล"></td>
+        <td data-cell="ประเภทรถ">1</td>
+        <td data-cell="ระดับความเร่งด่วน">1</td>
+        <td data-cell="สถานะ">1</td>
+        <td data-cell="หมายเหตุ">1</td>
+        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
+        <td data-cell="แก้ไข"><button  @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
+        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
+      </tr>
+      </tbody>
+  </table>
+</div>
+
+
+@code 
+{ 
+    private void button_click_assign() 
+    { 
+        NavigationManager.NavigateTo("/assign/"); 
+    } 
+    private void button_edit() 
+    { 
+        NavigationManager.NavigateTo("/edit_data/"); 
+    } 
+}
+
+
