@@ -13,62 +13,62 @@
 } 
 <style type="text/css">
     .overlay {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: black;
-        opacity: 0.5;
-        z-index: 2000 
+        left: 0; @*ด้านซ้าย*@
+        right: 0; @*ด้านขวา*@
+        top: 0; @*ด้านบน*@
+        bottom: 0; @*ด้านล่าง*@
+        background-color: black; @*พื้นหลัง*@
+        opacity: 0.5; @*ความทึบ*@
+        z-index: 2000  @*การซ้อนทับของlayout*@
     }
     .loading-wrapper {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 2001
+        left: 0; @*ด้านซ้าย*@
+        right: 0; @*ด้านขวา*@
+        top: 0; @*ด้านบน*@
+        bottom: 0; @*ด้านล่าง*@
+        z-index: 2001 @*การซ้อนทับของlayout*@
     }
     .wrapper{
-        width: 450px;
-        background: transparent;
-        border: 2px solid rgba(255, 255, 255, .2);
-        backdrop-filter: blur(40px);
-        color: #000000;
-        border-radius: 30px;
-        padding: 30px 30px;
+        width: 450px; @*ความกว้าง*@
+        background: transparent; @*พื้นภาพโปร่งใส*@
+        border: 2px solid rgba(255, 255, 255, .2); @*ความหนาของเส้น กับสี*@
+        backdrop-filter: blur(40px); @*การเบลอ*@
+        color: #000000; @*สี*@
+        border-radius: 30px; @*ความโค้ง*@
+        padding: 30px 30px; @*ระยะห่าง*@
     }
     .wrapper h3{
-        font-size: 36;
-        text-align: center;
+        font-size: 36; @*ขนาดตัวอักษร *@
+        text-align: center; @*ตัวอักษรกึ่งกลาง *@
     }
     .wrapper .input-box{
-        width: 100%;
-        height: 40px;
+        width: 100%; @*ความกว้าง*@
+        height: 40px; @*ความสูง*@
         margin: 10px 10px;
     }
     .cen{
-        width: 100%;
-        height: 50px;
+        width: 100%; @*ความกว้าง*@
+        height: 50px; @*ความสูง*@
         margin: 10px 40px;
     }
     .input-box input{
-        width: 300px;
-        height: 10%;
-        background: transparent;
-        border: none;
-        outline: none;
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius: 40px;
-        font-size: 16px;
-        color: #000000;
+        width: 300px; @*ความกว้าง*@
+        height: 10%; @*ความสูง*@
+        background: transparent; @*พื้นภาพโปร่งใส*@
+        border: none; @*ไม่แสดงเส้น*@
+        outline: none; @*ไม่แสดงพื้นที่รอบนอก*@
+        border: 2px solid rgba(0, 0, 0, 0.2); @*ความหนาของเส้น กับสี*@
+        border-radius: 40px; @*ความโค้ง*@
+        font-size: 16px; @*ขนาดตัวอักษร *@
+        color: #000000; @*สี*@
         padding: 20px 50px 20px 35px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto; @*ปรับซ้าย auto  การจัดกึ่งกลาง*@
+        margin-right: auto; @*ปรับขวา auto การจัดกึ่งกลาง*@
     }
     .input-box input::placeholder{
-        color: #000000;
+        color: #000000; @*สี*@
     }
-    .input-box i1 {
+    @* .input-box i1 {
         position: absolute;
         right: 20px;
         top: 415px;
@@ -81,44 +81,44 @@
         top: 475px;
         transform: translateX(-790px);
         font-size: 20px;
-    }
+    } *@
     .wrapper .btn {
-        width: 40%;
-        height: 40px;
-        background: #fff;
-        border: none;
-        outline: none;
-        border-radius: 40px; @*ทำให้มุมมน*@
-        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-        cursor: pointer;
-        color: #000000;
-        font-weight: 600;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 40%; @*ความกว้าง*@
+        height: 40px; @*ความสูง*@
+        background: #fff;  @*พื้นหลัง*@
+        border: none; @*ไม่แสดงเส้น*@
+        outline: none; @*ไม่แสดงพื้นที่รอบนอก*@
+        border-radius: 40px; @*ความโค้ง*@
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1); @*สร้างเงา*@
+        cursor: pointer; @*ชี้แล้วเปลี่ยนลูกศร*@
+        color: #000000; @*สี*@
+        font-weight: 600;  @*ขนาดตัวอักษร *@
+        display: block; @*แท็กข้อความ ขึ้นบรรทัดใหม่  การจัดกึ่งกลาง*@
+        margin-left: auto; @*ปรับซ้าย auto  การจัดกึ่งกลาง*@
+        margin-right: auto; @*ปรับขวา auto การจัดกึ่งกลาง*@
         background-image: linear-gradient(180deg, #1BB67A 0%, #59E3AC 70%);
     }
     .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        display: block; @*แท็กข้อความ ขึ้นบรรทัดใหม่  การจัดกึ่งกลาง*@
+        margin-left: auto; @*ปรับซ้าย auto  การจัดกึ่งกลาง*@
+        margin-right: auto; @*ปรับขวา auto การจัดกึ่งกลาง*@
     }
     .backgroundP1 {
-        background-image: url('images/P1.jpg');
+        background-image: url('images/P1.jpg'); @*พาทรูป*@ 
         /* background: yellow; */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
+        background-repeat: no-repeat; @*การเรียงรูปภาพไปแนวแกน X แนวนอน หรือ Y  รูปจะถูกใช้ครั้งเดียว*@
+        background-position: center; @*จัดตำแหน่งของพื้นหลังให้กึ่งกลาง*@
+        background-attachment: fixed; @**@
+        background-size: cover;  @**@
         @* max-width: 100%; *@
-        width: 1700px;
-        height: 675px;
-        opacity: 0.6;
+        width: 1700px; @*ความกว้าง*@
+        height: 675px; @*ความสูง*@
+        opacity: 0.6; @*ความทึบ*@
         @* background-size: 100% 100%; *@
     }
     .grid{
-        margin-bottom: 3rem;
-        display: grid;
+        margin-bottom: 3rem; @*ขนาดของปุ่ม*@
+        display: grid; @*จัดช่องไฟ*@
         grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); @*1fr คือให้คำนวณพื้นที่ auto*@
     }
 </style>

@@ -1,69 +1,71 @@
 .content-table{
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse; /*เส้นขอบนอก*/
+    margin: 25px 0; /*ขนาดตัวอักษร*/
+    font-size: 0.9em; /*ความกว้ง*/
+    min-width: 400px; /*ทำให้มุมมน*/
+    border-radius: 10px 10px 0 0; /*ซ่อนข้อความส่วนที่เกิน*/
+    overflow: hidden; /*สร้างเงา*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /*สร้างระยะauto*/
 }
 .content-table thead tr{
-   background-color: #04cea6;
-   color: #000000;
-   text-align: center;
-   font-weight: bold;
-   height: 55px;
+   background-color: #04cea6;/*สีพื้นหลัง*/
+   color: #000000;/*สี*/
+   text-align: center;/*ตัวอักษรกึ่งกลาง*/
+   font-weight: bold;/*ความหนาของตัวอักษร*/
+   height: 55px;/*ความสูง*/
 }
 .content-table  th,
 .content-table  tr{
-   padding: 2px 15px;
+   padding: 2px 15px; /*สร้างระยะ*/
 }
 .content-table tbody tr{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /*เส้นขอบ*/
 }
 .content-table tbody tr:nth-of-type(even){
-    background-color: #fffffff6;
+    background-color: #fffffff6; /*สีพื้นหลัง*/
 }
 .content-table tbody tr:nth-of-type(){
-    border-bottom: 20px solid #00ffcc;
+    border-bottom: 20px solid #00ffcc; /*สีพื้นหลัง*/
 }
 
 table{
-    border-collapse: collapse;
-    background: #fffffff4;
+    border-collapse: collapse;;/*เส้นขอบนอก*/
+    background: #fffffff4;/*สีพื้นหลัง*/
     
 }
 th,
 td{
-    padding: 1rem;
+    padding: 1rem;/*สร้างระยะ*/
 }
 th {
-    text-align: left;
-    background: hsla(0, 0%, 100%, 0.5);
+    text-align: left; /*ตัวอักษรชิดซ้าย*/
+    background: hsla(0, 0%, 100%, 0.5);  /*สีพื้นหลัง*/
 }
 tr:nth-of-type(2n) {
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%);  /*สีพื้นหลัง*/
 }
 
-@media (max-width: 750px) {
+@media (max-width: 750px) { /*ความกว้าง*/ 
     th {
         display: none;
     }
     td {
-        display: grid;
-        gap: 0.5rem;
-        grid-template-columns: 15ch auto;
+        display: grid; /*จัดช่องไฟ*/
+        gap: 0.5rem; /*สร้างระยะ*/
+        grid-template-columns: 15ch auto; /*ความกว้างของแต่ละ Element จะถูกหารตามจำนวนของ Element*/
         padding: 0.5rem 1rem;
     }
     td:first-child{
-        padding-top: 2rem;
+        padding-top: 2rem; /*สร้างระยะด้านบน*/
     }
     td:last-child{
-        padding-bottom: 2rem;
+        padding-bottom: 2rem; /*สร้างระยะด้านล้าง*/
     }
     td::before {
         content: attr(data-cell) ": ";
-        font-weight: 700;
+        font-weight: 700; /*ขนาดตัวอักษร*/
         text-transform: capitalize;
     }
 }
+
+
