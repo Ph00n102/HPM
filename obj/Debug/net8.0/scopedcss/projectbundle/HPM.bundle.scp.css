@@ -215,212 +215,214 @@ main[b-mzoj3ufjqh] {
 }
 /* _content/HPM/Components/Pages/Add_Data.razor.rz.scp.css */
 .content-table[b-ny84hykxxh]{
-    border-collapse: collapse;
+    border-collapse: collapse; /*เส้นขอบนอก*/
     /* margin: 25px 0; */
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-    margin: auto;
+    font-size: 0.9em; /*ขนาดตัวอักษร*/
+    min-width: 400px; /*ความกว้ง*/
+    border-radius: 10px 10px 0 0; /*@*ทำให้มุมมน*@*/
+    overflow: hidden; /*ซ่อนข้อความส่วนที่เกิน*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /*สร้างเงา*/
+    margin: auto; /*สร้างระยะ auto*/
 }
 .content-table thead tr[b-ny84hykxxh]{
-   background-color: #04cea6;
-   color: #000000;
-   text-align: center;
-   font-weight: bold;
-   height: 55px;
+   background-color: #04cea6; /*สีพื้นหลัง*/
+   color: #000000; /*สี*/
+   text-align: center; /*ตัวอักษรกึ่งกลาง*/
+   font-weight: bold; /*ความหนาของตัวอักษร*/
+   height: 55px; /*ความสูง*/
 }
 .content-table  th[b-ny84hykxxh],
 .content-table  tr[b-ny84hykxxh]{
-   padding: 2px 15px;
+   padding: 2px 15px; /*สร้างระยะ*/
 }
 .content-table tbody tr[b-ny84hykxxh]{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /*เส้นขอบ*/
 }
 .content-table tbody tr:nth-of-type(even)[b-ny84hykxxh]{
     background-color: #ffffffe9;
 }
 .content-table tbody tr:nth-of-type()[b-ny84hykxxh]{
-    border-bottom: 20px solid #00ffcc;
+    border-bottom: 20px solid #00ffcc; /*สีพื้นหลัง*/
 }
 
 table[b-ny84hykxxh]{
-    border-collapse: collapse;
-    background: #e0e0e06a;
+    border-collapse: collapse;/*เส้นขอบนอก*/
+    background: #e0e0e06a; /*สีพื้นหลัง*/
     
 }
 th[b-ny84hykxxh],
 td[b-ny84hykxxh]{
-    padding: 1rem;
+    padding: 1rem; /*สร้างระยะ*/
 }
 th[b-ny84hykxxh] {
-    text-align: left;
-    background: hsla(0, 0%, 100%, 0.5);
+    text-align: left;  /*ตัวอักษรชิดซ้าย*/
+    background: hsla(0, 0%, 100%, 0.5); /*สีพื้นหลัง*/
 }
 tr:nth-of-type(2n)[b-ny84hykxxh] {
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%); /*สีพื้นหลัง*/
 }
-
-@media (max-width: 750px) {
+ 
+@media (max-width: 750px) { /*ความกว้าง*/
     th[b-ny84hykxxh] {
-        display: none;
+        display: none;  
     }
     td[b-ny84hykxxh] {
-        display: grid;
-        gap: 0.5rem;
-        grid-template-columns: 15ch auto;
+        display: grid; /*จัดช่องไฟ*/
+        gap: 0.5rem; /*สร้างระยะ*/
+        grid-template-columns: 15ch auto; /*ความกว้างของแต่ละ Element จะถูกหารตามจำนวนของ Element*/
         padding: 0.5rem 1rem;
     }
     td:first-child[b-ny84hykxxh]{
-        padding-top: 2rem;
+        padding-top: 2rem; /*สร้างระยะด้านบน*/
     }
     td:last-child[b-ny84hykxxh]{
-        padding-bottom: 2rem;
+        padding-bottom: 2rem; /*สร้างระยะด้านล้าง*/
     }
     td[b-ny84hykxxh]::before {
         content: attr(data-cell) ": ";
-        font-weight: 700;
+        font-weight: 700;  /*ขนาดตัวอักษร*/
         text-transform: capitalize;
     }
 }
 /* _content/HPM/Components/Pages/Index.razor.rz.scp.css */
 .content-table[b-n3rjy5uqpa]{
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse; /*เส้นขอบนอก*/
+    margin: 25px 0; /*ขนาดตัวอักษร*/
+    font-size: 0.9em; /*ความกว้ง*/
+    min-width: 400px; /*ทำให้มุมมน*/
+    border-radius: 10px 10px 0 0; /*ซ่อนข้อความส่วนที่เกิน*/
+    overflow: hidden; /*สร้างเงา*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /*สร้างระยะauto*/
 }
 .content-table thead tr[b-n3rjy5uqpa]{
-   background-color: #04cea6;
-   color: #000000;
-   text-align: center;
-   font-weight: bold;
-   height: 55px;
+   background-color: #04cea6;/*สีพื้นหลัง*/
+   color: #000000;/*สี*/
+   text-align: center;/*ตัวอักษรกึ่งกลาง*/
+   font-weight: bold;/*ความหนาของตัวอักษร*/
+   height: 55px;/*ความสูง*/
 }
 .content-table  th[b-n3rjy5uqpa],
 .content-table  tr[b-n3rjy5uqpa]{
-   padding: 2px 15px;
+   padding: 2px 15px; /*สร้างระยะ*/
 }
 .content-table tbody tr[b-n3rjy5uqpa]{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;/*เส้นขอบ*/
 }
 .content-table tbody tr:nth-of-type(even)[b-n3rjy5uqpa]{
-    background-color: #fffffff6;
+    background-color: #fffffff6;/*สีพื้นหลัง*/
 }
 .content-table tbody tr:nth-of-type()[b-n3rjy5uqpa]{
-    border-bottom: 20px solid #00ffcc;
+    border-bottom: 20px solid #00ffcc;/*สีพื้นหลัง*/
 }
 
 table[b-n3rjy5uqpa]{
-    border-collapse: collapse;
-    background: #fffffff4;
+    border-collapse: collapse; ;/*เส้นขอบนอก*/
+    background: #fffffff4; /*สีพื้นหลัง*/
     
 }
 th[b-n3rjy5uqpa],
 td[b-n3rjy5uqpa]{
-    padding: 1rem;
+    padding: 1rem; /*สร้างระยะ*/
 }
 th[b-n3rjy5uqpa] {
-    text-align: left;
-    background: hsla(0, 0%, 100%, 0.5);
+    text-align: left; /*ตัวอักษรชิดซ้าย*/
+    background: hsla(0, 0%, 100%, 0.5); /*สีพื้นหลัง*/
 }
 tr:nth-of-type(2n)[b-n3rjy5uqpa] {
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%); /*สีพื้นหลัง*/
 }
 
-@media (max-width: 750px) {
+@media (max-width: 750px) { /*ความกว้าง*/
     th[b-n3rjy5uqpa] {
         display: none;
     }
     td[b-n3rjy5uqpa] {
-        display: grid;
-        gap: 0.5rem;
-        grid-template-columns: 15ch auto;
+        display: grid; /*จัดช่องไฟ*/
+        gap: 0.5rem; /*สร้างระยะ*/
+        grid-template-columns: 15ch auto; /*ความกว้างของแต่ละ Element จะถูกหารตามจำนวนของ Element*/
         padding: 0.5rem 1rem;
     }
     td:first-child[b-n3rjy5uqpa]{
-        padding-top: 2rem;
+        padding-top: 2rem; /*สร้างระยะด้านบน*/
     }
     td:last-child[b-n3rjy5uqpa]{
-        padding-bottom: 2rem;
+        padding-bottom: 2rem; /*สร้างระยะด้านล้าง*/
     }
     td[b-n3rjy5uqpa]::before {
         content: attr(data-cell) ": ";
-        font-weight: 700;
+        font-weight: 700; /*ขนาดตัวอักษร*/
         text-transform: capitalize;
     }
 }
 /* _content/HPM/Components/Pages/Index_Nurse.razor.rz.scp.css */
 .content-table[b-k0klmmumsb]{
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse; /*เส้นขอบนอก*/
+    margin: 25px 0; /*ขนาดตัวอักษร*/
+    font-size: 0.9em; /*ความกว้ง*/
+    min-width: 400px; /*ทำให้มุมมน*/
+    border-radius: 10px 10px 0 0; /*ซ่อนข้อความส่วนที่เกิน*/
+    overflow: hidden; /*สร้างเงา*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /*สร้างระยะauto*/
 }
 .content-table thead tr[b-k0klmmumsb]{
-   background-color: #04cea6;
-   color: #000000;
-   text-align: center;
-   font-weight: bold;
-   height: 55px;
+   background-color: #04cea6;/*สีพื้นหลัง*/
+   color: #000000;/*สี*/
+   text-align: center;/*ตัวอักษรกึ่งกลาง*/
+   font-weight: bold;/*ความหนาของตัวอักษร*/
+   height: 55px;/*ความสูง*/
 }
 .content-table  th[b-k0klmmumsb],
 .content-table  tr[b-k0klmmumsb]{
-   padding: 2px 15px;
+   padding: 2px 15px; /*สร้างระยะ*/
 }
 .content-table tbody tr[b-k0klmmumsb]{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /*เส้นขอบ*/
 }
 .content-table tbody tr:nth-of-type(even)[b-k0klmmumsb]{
-    background-color: #fffffff6;
+    background-color: #fffffff6; /*สีพื้นหลัง*/
 }
 .content-table tbody tr:nth-of-type()[b-k0klmmumsb]{
-    border-bottom: 20px solid #00ffcc;
+    border-bottom: 20px solid #00ffcc; /*สีพื้นหลัง*/
 }
 
 table[b-k0klmmumsb]{
-    border-collapse: collapse;
-    background: #fffffff4;
+    border-collapse: collapse;;/*เส้นขอบนอก*/
+    background: #fffffff4;/*สีพื้นหลัง*/
     
 }
 th[b-k0klmmumsb],
 td[b-k0klmmumsb]{
-    padding: 1rem;
+    padding: 1rem;/*สร้างระยะ*/
 }
 th[b-k0klmmumsb] {
-    text-align: left;
-    background: hsla(0, 0%, 100%, 0.5);
+    text-align: left; /*ตัวอักษรชิดซ้าย*/
+    background: hsla(0, 0%, 100%, 0.5);  /*สีพื้นหลัง*/
 }
 tr:nth-of-type(2n)[b-k0klmmumsb] {
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%);  /*สีพื้นหลัง*/
 }
 
-@media (max-width: 750px) {
+@media (max-width: 750px) { /*ความกว้าง*/ 
     th[b-k0klmmumsb] {
         display: none;
     }
     td[b-k0klmmumsb] {
-        display: grid;
-        gap: 0.5rem;
-        grid-template-columns: 15ch auto;
+        display: grid; /*จัดช่องไฟ*/
+        gap: 0.5rem; /*สร้างระยะ*/
+        grid-template-columns: 15ch auto; /*ความกว้างของแต่ละ Element จะถูกหารตามจำนวนของ Element*/
         padding: 0.5rem 1rem;
     }
     td:first-child[b-k0klmmumsb]{
-        padding-top: 2rem;
+        padding-top: 2rem; /*สร้างระยะด้านบน*/
     }
     td:last-child[b-k0klmmumsb]{
-        padding-bottom: 2rem;
+        padding-bottom: 2rem; /*สร้างระยะด้านล้าง*/
     }
     td[b-k0klmmumsb]::before {
         content: attr(data-cell) ": ";
-        font-weight: 700;
+        font-weight: 700; /*ขนาดตัวอักษร*/
         text-transform: capitalize;
     }
 }
+
+
