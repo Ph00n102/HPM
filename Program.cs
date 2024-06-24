@@ -1,6 +1,7 @@
 using HPM.Components;
 using HPM.Data;
 using Microsoft.EntityFrameworkCore;
+using HPM.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddBlazorBootstrap();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+// builder.Services.AddTransient<IJobRequestService>();
+builder.Services.AddTransient<JobRequestService>();
 
 
 

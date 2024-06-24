@@ -1,8 +1,12 @@
 @page "/input_detail"
+@using HPM.Service
+@using HPM.Models
+@using HPM.Data.Entities
 @inject NavigationManager NavigationManager
-
+@inject JobRequestService JobRequestService
 @attribute [StreamRendering]
 @rendermode InteractiveServer
+
 
 <style>
     .grid{
@@ -59,17 +63,20 @@
   <div class="row ">
     <div class="col-sm-4">
        <label>HN/QN :</label>
-        <input type="text" class="form-control" style="background-color: #fdfce0;">
+        @* <input type="text" class="form-control" style="background-color: #fdfce0;"> *@
+        <InputText class="form-control" @bind-Value="jobRequest.HN" style="background-color: #fdfce0;"/>
+    </div>
     </div>
     <div class="col-sm-4">
        <label>ชื่อ-นามสกุล :</label>
-        <input type="text" class="form-control" style="background-color: #fdfce0;">
+        @* <input type="text" class="form-control" @bind-Value="jobRequest.PatientType" style="background-color: #fdfce0;"> *@
+        <InputText class="form-control" @bind-Value="jobRequest.FirstName" style="background-color: #fdfce0;"/>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-4">
       <label>ประเภทคนไข้ :</label>
-        <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+        <select class="form-select" @bind="jobRequest.PatientType" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทคนไข้</option>
             <option value="1">OPD</option>
             <option value="2">IPD</option>
@@ -77,7 +84,7 @@
     </div>
     <div class="col-sm-4">
        <label>ประเภทรถเข็น :</label>
-         <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+         <select class="form-select" @bind="jobRequest.MaterialName" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทรถเข็น</option>
             <option value="1">รถนั่ง</option>
             <option value="2">รถนอน</option>
@@ -100,11 +107,11 @@
    <div class="row">
       <div class="col-sm-4">
        <label>ประเภทความเร่งด่วน :</label>
-        <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+        <select class="form-select" @bind="jobRequest.UrgentType" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทความเร่งด่วน</option>
-            <option value="1">ปกติ เขียว</option>
-            <option value="2">ด่วน เหลือง</option>
-            <option value="3">ฉุกเฉิน แดง</option>
+            <option value="1">ปกติ</option>
+            <option value="2">ด่วน</option>
+            <option value="3">ฉุกเฉิน</option>
         </select>
     </div>
   </div>
@@ -113,7 +120,7 @@
    <div class="row">
       <div class="col-sm-8">
           <label>หมายเหตุ :</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="background-color: #fdfce0;"></textarea>
+        <textarea class="form-control" @bind="jobRequest.Remark" id="exampleFormControlTextarea1" rows="3" style="background-color: #fdfce0;"></textarea>
       </div>
       <div class="col">
       </div>
@@ -123,7 +130,7 @@
   <div class="row">
     <div class="col-sm-4">
        <label>จุดส่งที่ 1 :</label>
-       <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+       <select class="form-select" @bind="jobRequest.Destination" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกจุดส่ง</option>
             <option value="1">1 ห้องฉุกเฉิน (ER)</option>
             <option value="2">2 ห้องเจาะเลือด</option>
@@ -133,7 +140,7 @@
     </div>
     <div class="col-sm-4">
       <label>จุดส่งที่ 2 :</label>
-       <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+       <select class="form-select" @bind="jobRequest.Destination" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกจุดส่ง</option>
             <option value="1">1 ห้องฉุกเฉิน (ER)</option>
             <option value="2">2 ห้องเจาะเลือด</option>
@@ -145,7 +152,7 @@
   <div class="row">
     <div class="col-sm-4">
        <label>จุดส่งที่ 3 :</label>
-       <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+       <select class="form-select" @bind="jobRequest.Destination" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกจุดส่ง</option>
             <option value="1">1 ห้องฉุกเฉิน (ER)</option>
             <option value="2">2 ห้องเจาะเลือด</option>
@@ -155,7 +162,7 @@
     </div>
     <div class="col-sm-4">
       <label>จุดส่งที่ 4 :</label>
-       <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+       <select class="form-select" @bind="jobRequest.Destination" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกจุดส่ง</option>
             <option value="1">1 ห้องฉุกเฉิน (ER)</option>
             <option value="2">2 ห้องเจาะเลือด</option>
@@ -169,20 +176,55 @@
   <br />
   <div class="row">
     <div class="col-sm-4" align="right" style="width:120px;">
-      <button class="btn1 btn-success">บันทึก</button>
+      <button class="btn1 btn-success" @onclick="SaveAsync">บันทึก</button>
     </div>
-    <div class="col-sm-4" style="width:120px;">
+    @* <div class="col-sm-4" style="width:120px;">
       <button  @onclick="btn_click_add" class="btn2 btn-success" >เพิ่มข้อมูล</button>
-    </div>
+    </div> *@
   </div>
-</div>
 
 
 
 @code 
 { 
-    private void btn_click_add() 
+    @* public JobRequest? jobRequest { get; set; } *@
+    @* [Parameter]
+    public EventCallback<MethodResult> OnSaveJob{ get; set; } *@
+    
+    @* Data.Entities.JobRequest jobRequest = new(); *@
+    [Parameter]
+    public int JobId { get; set; } 
+    private JobRequest jobRequest = new();
+    private string message = string.Empty;
+    private string Title = "Add Job";
+    
+    private void SaveAsync()
+    {
+        
+        if (JobRequestService.AddUpdate(jobRequest))
+        {
+            message = "Sucessfully added";
+            jobRequest = new();
+        }
+        else
+        {
+            message = "Could not saved";
+        }
+    } 
+     private void btn_click_add() 
     { 
-        NavigationManager.NavigateTo("/Add_Data/"); 
-    }
+        NavigationManager.NavigateTo("/index_nurse"); 
+    }  
+
+    @* private async Task SaveAsync()
+
+    {
+         MethodResult result = await JobRequestService.SaveAsync(jobRequest);
+        if (result.Status)
+        {
+            jobRequest = new();
+            NavigationManager.NavigateTo("/index_nurse");
+        }
+        await OnSaveJob.InvokeAsync(result);
+    } *@
 }

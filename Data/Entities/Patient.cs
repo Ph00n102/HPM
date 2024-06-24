@@ -11,4 +11,5 @@ namespace HPM.Data.Entities
         [Required, MaxLength(20), Unicode(false)]
         public string PatientType { get; set; } 
     } 
+    
 }
