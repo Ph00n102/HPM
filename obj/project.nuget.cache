@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OJFvUSzL9pA=",
+  "dgSpecHash": "GPOEajec3jA=",
   "success": true,
-  "projectFilePath": "d:\\HPM\\HPM.csproj",
+  "projectFilePath": "D:\\HPM\\HPM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\aqua-core\\5.4.0\\aqua-core.5.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\aqua-core-newtonsoft-json\\5.4.0\\aqua-core-newtonsoft-json.5.4.0.nupkg.sha512",

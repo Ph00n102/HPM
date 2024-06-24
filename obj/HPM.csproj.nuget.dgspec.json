@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\HPM\\HPM.csproj": {}
+    "D:\\HPM\\HPM.csproj": {}
   },
   "projects": {
-    "d:\\HPM\\HPM.csproj": {
+    "D:\\HPM\\HPM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\HPM\\HPM.csproj",
+        "projectUniqueName": "D:\\HPM\\HPM.csproj",
         "projectName": "HPM",
-        "projectPath": "d:\\HPM\\HPM.csproj",
+        "projectPath": "D:\\HPM\\HPM.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "d:\\HPM\\obj\\",
+        "outputPath": "D:\\HPM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
