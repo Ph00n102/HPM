@@ -26,34 +26,36 @@ namespace HPM.Service
             {
                 return false;
             }
+
+        }
+            public bool Delete(int JobId)
+        {
+            try
+            {
+                var jobRequest = FindById(JobId);
+                if (jobRequest == null)
+                    return false;
+                _ctx.JobRequests.Remove(jobRequest);
+                _ctx.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+            
         }
 
-    //     public bool Delete(int JobId)
-    //     {
-    //         try
-    //         {
-    //             var jobRequest = FindById(JobId);
-    //             if (jobRequest == null)
-    //                 return false;
-    //             _ctx.JobRequests.Remove(jobRequest);
-    //             _ctx.SaveChanges();
-    //             return true;
-    //         }
-    //         catch (Exception ex)
-    //         {
+        public JobRequest FindById(int HN)
+        {
+            return _ctx.JobRequests.Find(HN);
+        }
+        
 
-    //             return false;
-    //         }
-    //     }
-
-    //     public Person FindById(int id)
-    //     {
-    //         return _ctx.Person.Find(id);
-    //     }
-
-    //     public List<Person> GetAll()
-    //     {
-    //         return _ctx.Person.ToList();
-    //     }
+         public List<JobRequest> GetAll()
+         {
+             return _ctx.JobRequests.ToList();
+         }
      }
 }

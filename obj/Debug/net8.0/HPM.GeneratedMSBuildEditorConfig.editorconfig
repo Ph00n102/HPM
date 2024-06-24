@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBc3NpZ24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HPM/Components/Pages/AssignPorter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBc3NpZ25Qb3J0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HPM/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D1RgcPOwvIoAqjvTZ6yKXGK6taVcyc8oe+8wAF1hxd4=",
+  "Hash": "X6cBhNcX3bitzrrJVS3EAsPFNP/2nedyto3CC2k43bA=",
   "Source": "HPM",
   "BasePath": "_content/HPM",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "HPM\\wwwroot",
       "Source": "HPM",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "Pattern": "**"
     }
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\blazor.bootstrap\\3.0.0-preview.1\\staticwebassets\\pdfjs-4.0.379.worker.min.mjs"
     },
     {
-      "Identity": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HPM.styles.css",
+      "Identity": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HPM.styles.css",
       "SourceId": "HPM",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HPM",
       "RelativePath": "HPM.styles.css",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HPM.styles.css"
+      "OriginalItemSpec": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HPM.styles.css"
     },
     {
-      "Identity": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css",
+      "Identity": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css",
       "SourceId": "HPM",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HPM",
       "RelativePath": "HPM.bundle.scp.css",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css"
+      "OriginalItemSpec": "D:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\app.css",
+      "Identity": "D:\\HPM\\wwwroot\\app.css",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\favicon.png",
+      "Identity": "D:\\HPM\\wwwroot\\favicon.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\Bg.png",
+      "Identity": "D:\\HPM\\wwwroot\\images\\Bg.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/Bg.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bg.png"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\logo1.png",
+      "Identity": "D:\\HPM\\wwwroot\\images\\logo1.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/logo1.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo1.png"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\logo.png",
+      "Identity": "D:\\HPM\\wwwroot\\images\\logo.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\P1.jpg",
+      "Identity": "D:\\HPM\\wwwroot\\images\\P1.jpg",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/P1.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\P1.jpg"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\P2.jpg",
+      "Identity": "D:\\HPM\\wwwroot\\images\\P2.jpg",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/P2.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\P2.jpg"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\P4.png",
+      "Identity": "D:\\HPM\\wwwroot\\images\\P4.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/P4.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\P4.png"
     },
     {
-      "Identity": "d:\\HPM\\wwwroot\\images\\P5.png",
+      "Identity": "D:\\HPM\\wwwroot\\images\\P5.png",
       "SourceId": "HPM",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\HPM\\wwwroot\\",
+      "ContentRoot": "D:\\HPM\\wwwroot\\",
       "BasePath": "_content/HPM",
       "RelativePath": "images/P5.png",
       "AssetKind": "All",

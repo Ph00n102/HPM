@@ -32,6 +32,7 @@ namespace HPM.Data.Entities
 
         public string PatientType { get; set; } 
 
+        public string PersonName { get; set; }
         public int PersonId { get; set; }
         public DateTime TimeClose { get; set; } 
         public DateTime DateClase { get; set; }

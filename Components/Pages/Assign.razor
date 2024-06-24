@@ -1,4 +1,8 @@
-@page "/assign"
+@page "/assign01"
+@using HPM.Service
+@using HPM.Data.Entities
+@using HPM.Models
+@inject JobRequestService JobRequestService
 @inject NavigationManager NavigationManager
 
 @attribute [StreamRendering]
@@ -60,6 +64,7 @@
     <div class="col-sm-4">
        <label>รหัสพนักงาน :</label>
         <input type="text" class="form-control" style="background-color: #fdfce0;">
+      
     </div>
     <div class="col-sm-4">
        <label>ชื่อ-นามสกุล :</label>
@@ -88,6 +93,7 @@
 
 @code 
 { 
+  
     private void btn_click() 
     { 
         NavigationManager.NavigateTo("/Add_Data/"); 
