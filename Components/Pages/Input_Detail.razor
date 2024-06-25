@@ -1,6 +1,9 @@
 @page "/input_detail"
+@using HPM.Services
+@using HPM.Models
+@using HPM.Data.Entities
 @inject NavigationManager NavigationManager
-
+@inject JobReqeustService jobRequestService
 @attribute [StreamRendering]
 @rendermode InteractiveServer
 
@@ -61,17 +64,19 @@
   <div class="row ">
     <div class="col-sm-4">
        <label>HN/QN :</label>
-        <input type="text" class="form-control" style="background-color: #fdfce0;">
+        @* <input type="text" class="form-control" style="background-color: #fdfce0;"> *@
+        <InputText class="form-control" @bind-Value="jobRequest.PatientNH" style="background-color: #fdfce0;"/>
     </div>
     <div class="col-sm-4">
        <label>ชื่อ-นามสกุล :</label>
-        <input type="text" class="form-control" style="background-color: #fdfce0;">
+        @* <input type="text" class="form-control" style="background-color: #fdfce0;"> *@
+        <InputText class="form-control" @bind-Value="jobRequest.PatientName" style="background-color: #fdfce0;"/>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-4">
       <label>ประเภทคนไข้ :</label>
-        <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+        <select class="form-select" @bind="jobRequest.PatientType" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทคนไข้</option>
             <option value="1">OPD</option>
             <option value="2">IPD</option>
@@ -79,7 +84,7 @@
     </div>
     <div class="col-sm-4">
        <label>ประเภทรถเข็น :</label>
-         <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+         <select class="form-select" @bind="jobRequest.MaterialName" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทรถเข็น</option>
             <option value="1">รถนั่ง</option>
             <option value="2">รถนอน</option>
@@ -102,7 +107,7 @@
    <div class="row">
       <div class="col-sm-4">
        <label>ประเภทความเร่งด่วน :</label>
-        <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+        <select class="form-select" @bind="jobRequest.UrgentType" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกประเภทความเร่งด่วน</option>
             <option value="1">ปกติ เขียว</option>
             <option value="2">ด่วน เหลือง</option>
@@ -115,7 +120,7 @@
    <div class="row">
       <div class="col-sm-8">
           <label>หมายเหตุ :</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="background-color: #fdfce0;"></textarea>
+        <textarea class="form-control" @bind="jobRequest.Remark" id="exampleFormControlTextarea1" rows="3" style="background-color: #fdfce0;"></textarea>
       </div>
       <div class="col">
       </div>
@@ -125,7 +130,7 @@
   <div class="row">
     <div class="col-sm-4">
        <label>จุดส่งที่ 1 :</label>
-       <select class="form-select" aria-label="Default select example" style="background-color: #fdfce0;">
+       <select class="form-select" @bind="jobRequest.Destination" aria-label="Default select example" style="background-color: #fdfce0;">
             <option selected>เลือกจุดส่ง</option>
             <option value="1">1 ห้องฉุกเฉิน (ER)</option>
             <option value="2">2 ห้องเจาะเลือด</option>
@@ -171,7 +176,7 @@
   <br />
   <div class="row">
     <div class="col-sm-4" align="right" style="width:120px;">
-      <button class="btn1 btn-success">บันทึก</button>
+      <button @onclick="CreateJob"  class="btn1 btn-success">บันทึก</button>
     </div>
     <div class="col-sm-4" style="width:120px;">
       <button  @onclick="btn_click_add" class="btn2 btn-success" >เพิ่มข้อมูล</button>
@@ -183,6 +188,21 @@
 
 @code 
 { 
+    private JobRequest jobRequest = new();
+    protected async void CreateJob()
+    {
+        
+        await jobRequestService.InsertJobAsync(jobRequest);
+
+        NavigationManager.NavigateTo("/input_detail");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("/index_nurse" );
+    }
+
+
+
     private void btn_click_add() 
     { 
         NavigationManager.NavigateTo("/Add_Data/"); 

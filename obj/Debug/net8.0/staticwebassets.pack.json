@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "C:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css",
+      "Id": "d:\\HPM\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HPM.bundle.scp.css",
       "PackagePath": "staticwebassets\\HPM.bundle.scp.css"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\app.css",
+      "Id": "d:\\HPM\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\favicon.png",
+      "Id": "d:\\HPM\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\Bg.png",
+      "Id": "d:\\HPM\\wwwroot\\images\\Bg.png",
       "PackagePath": "staticwebassets\\images\\Bg.png"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\P1.jpg",
+      "Id": "d:\\HPM\\wwwroot\\images\\P1.jpg",
       "PackagePath": "staticwebassets\\images\\P1.jpg"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\P2.jpg",
+      "Id": "d:\\HPM\\wwwroot\\images\\P2.jpg",
       "PackagePath": "staticwebassets\\images\\P2.jpg"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\P4.png",
+      "Id": "d:\\HPM\\wwwroot\\images\\P4.png",
       "PackagePath": "staticwebassets\\images\\P4.png"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\P5.png",
+      "Id": "d:\\HPM\\wwwroot\\images\\P5.png",
       "PackagePath": "staticwebassets\\images\\P5.png"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\logo.png",
+      "Id": "d:\\HPM\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\HPM\\wwwroot\\images\\logo1.png",
+      "Id": "d:\\HPM\\wwwroot\\images\\logo1.png",
       "PackagePath": "staticwebassets\\images\\logo1.png"
     },
     {

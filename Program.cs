@@ -1,5 +1,6 @@
 using HPM.Components;
 using HPM.Data;
+using HPM.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddBlazorBootstrap();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+builder.Services.AddScoped<JobReqeustService>();
 
 
 

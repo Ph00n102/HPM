@@ -293,3 +293,6 @@ C:\HPM\obj\Debug\net8.0\ref\HPM.dll
 C:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Index.razor.rz.scp.css
 C:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Add_Data.razor.rz.scp.css
 C:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Index_Nurse.razor.rz.scp.css
+D:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Add_Data.razor.rz.scp.css
+D:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Index.razor.rz.scp.css
+D:\HPM\obj\Debug\net8.0\scopedcss\Components\Pages\Index_Nurse.razor.rz.scp.css

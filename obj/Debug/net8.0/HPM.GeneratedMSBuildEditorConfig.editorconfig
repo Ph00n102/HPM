@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HPM
 build_property.RootNamespace = HPM
-build_property.ProjectDir = C:\HPM\
+build_property.ProjectDir = d:\HPM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\HPM
+build_property.MSBuildProjectDirectory = d:\HPM
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/HPM/Components/App.razor]
+[d:/HPM/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Assign.razor]
+[d:/HPM/Components/Pages/Assign.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBc3NpZ24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Counter.razor]
+[d:/HPM/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Edit_Data.razor]
+[d:/HPM/Components/Pages/Edit_Data.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0X0RhdGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Error.razor]
+[d:/HPM/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Home.razor]
+[d:/HPM/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Input_Detail.razor]
+[d:/HPM/Components/Pages/Input_Detail.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnB1dF9EZXRhaWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Login.razor]
+[d:/HPM/Components/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Pages/Weather.razor]
+[d:/HPM/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Routes.razor]
+[d:/HPM/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/_Imports.razor]
+[d:/HPM/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/HPM/Components/Layout/MainLayout.razor]
+[d:/HPM/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-mzoj3ufjqh
 
-[C:/HPM/Components/Layout/NavMenu.razor]
+[d:/HPM/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-dx3qqxndx4
 
-[C:/HPM/Components/Pages/Add_Data.razor]
+[d:/HPM/Components/Pages/Add_Data.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRfRGF0YS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ny84hykxxh
 
-[C:/HPM/Components/Pages/Index.razor]
+[d:/HPM/Components/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-n3rjy5uqpa
 
-[C:/HPM/Components/Pages/Index_Nurse.razor]
+[d:/HPM/Components/Pages/Index_Nurse.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleF9OdXJzZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-k0klmmumsb

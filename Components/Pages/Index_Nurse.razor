@@ -1,4 +1,11 @@
 @page "/index_nurse" 
+@using HPM.Components;
+@using HPM.Data;
+@using HPM.Data.Entities
+@using HPM.Models
+@using Microsoft.EntityFrameworkCore;
+@using HPM.Services;
+@inject JobReqeustService jobRequestService
 @inject NavigationManager NavigationManager
 
 @attribute [StreamRendering]
@@ -56,13 +63,8 @@
         border-radius: 20px; @*ทำให้มุมมน*@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); @*ทำให้มุมมน*@
         cursor: pointer; @*ชี้แล้วเปลี่ยนลูกศร*@
-        color: #000000; @*สี*@
-        font-weight: 600; @*ขนาดตัวอักษร *@
-        background-image: linear-gradient(180deg, #ffff9d 0%, #bd9c17 70%); @*ไล่สี*@
-    }
-   
 </style>
-<br />
+
 <div class="row grid ">
     <div class="col-sm-3 align-self-center" style="width:40px;" >
         <label >QN</label>
@@ -74,74 +76,51 @@
         <button class="btn1 btn-success">ค้นหา</button>
     </div>
 </div>
+
+       
 <div class="row grid">
    <table class="content-table table-bordered ">
     <thead>
       <tr>
         <th> QN</th>
-        <th> ชื่อ-นามสกุล</th>
-        <th> ต้นทาง</th>
-        <th> ปลายทาง</th>
-        <th> พนักงานเวรเปล</th>
-        <th> ประเภทรถ</th>
-        <th> ระดับความเร่งด่วน</th>
-        <th> สถานะ</th>
+ <th> สถานะ</th>
         <th> หมายเหตุ</th>
         <th> ยืนยัน</th>
         <th> แก้ไข</th>
         @* <th> จ่ายงาน</th> *@
       </tr>
     </thead>
-    <tbody >
-      <tr>
-        <td data-cell="QN">1</td>
-        <td data-cell="ชื่อ-นามสกุล">1</td>
-        <td data-cell="ต้นทาง">1</td>
-        <td data-cell="ปลายทาง">1</td>
-        <td data-cell="พนักงานเวรเปล"></td>
-        <td data-cell="ประเภทรถ">1</td>
-        <td data-cell="ระดับความเร่งด่วน">1</td>
-        <td data-cell="สถานะ">1</td>
-        <td data-cell="หมายเหตุ">1</td>
-        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
-        <td data-cell="แก้ไข"><button  @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
-        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
-      </tr>
-      <tr>
-        <td data-cell="QN">1</td>
-        <td data-cell="ชื่อ-นามสกุล">1</td>
-        <td data-cell="ต้นทาง">1</td>
-        <td data-cell="ปลายทาง">1</td>
-        <td data-cell="พนักงานเวรเปล"></td>
-        <td data-cell="ประเภทรถ">1</td>
-        <td data-cell="ระดับความเร่งด่วน">1</td>
-        <td data-cell="สถานะ">1</td>
-        <td data-cell="หมายเหตุ">1</td>
-        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
-        <td data-cell="แก้ไข"><button @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
-        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
-      </tr>
-      <tr>
-        <td data-cell="QN">1</td>
-        <td data-cell="ชื่อ-นามสกุล">1</td>
-        <td data-cell="ต้นทาง">1</td>
-        <td data-cell="ปลายทาง">1</td>
-        <td data-cell="พนักงานเวรเปล"></td>
-        <td data-cell="ประเภทรถ">1</td>
-        <td data-cell="ระดับความเร่งด่วน">1</td>
-        <td data-cell="สถานะ">1</td>
-        <td data-cell="หมายเหตุ">1</td>
-        <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
-        <td data-cell="แก้ไข"><button  @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
-        @* <td data-cell="จ่ายงาน"><button @onclick="button_click_assign" class="btn3 btn-success">จ่ายงาน</button></td> *@
-      </tr>
-      </tbody>
+        <tbody>
+        @foreach (var item in job) {  @* loop ทำงานซ้ำ ประกาศตัวแปล item รับค่า wards จาก Function GetWardName*@
+        <tr>
+            <td>@item.PatientNH</td>
+            <td>@item.FirstName</td>
+            <td>@item.StartPoint</td
+            <td>@item.Destination</td
+            <td>@item.PersonId</td
+            <td>@item.MaterialName</td
+            <td>@item.Status</td
+            <td>@item.Remark</td
+            <td data-cell="ยืนยัน"><button class="btn2 btn-success">ยืนยัน</button></td>
+            <td data-cell="แก้ไข"><button  @onclick="button_edit" class="btn3 btn-success">แก้ไข</button></td>
+        </tr>
+        }
+    
+        </tbody>
   </table>
 </div>
 
 
+
 @code 
 { 
+    public List<JobRequest> job = new();
+    protected override async Task OnInitializedAsync()
+    {
+        job = await jobRequestService.GetAllJobAsync();
+    }
+  
+    
     private void button_click_assign() 
     { 
         NavigationManager.NavigateTo("/assign/"); 
@@ -151,5 +130,3 @@
         NavigationManager.NavigateTo("/edit_data/"); 
     } 
 }
-
-
